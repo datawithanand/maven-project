@@ -4,6 +4,9 @@ pipeline {
     tools {
         maven 'maventool'
     }
+    parameters {
+        choice choices: ['blue', 'green'], name: 'environment_selection'
+    }
 
     stages {
         stage("GIT Checkout") {
