@@ -21,6 +21,12 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+        stage("Test and Code Coverage") {
+            steps {
+                // Run tests and generate code coverage report
+                sh 'mvn test jacoco:report'
+            }
+        }
     }
 
     post {
