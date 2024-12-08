@@ -38,7 +38,10 @@
           <target>17</target>
         </configuration>
       </plugin>
-
+        <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
+        </plugin>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
